@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+  Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart
+   -->
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+    <!--navigation sec-->
+    <nav class="nav">
+      <div class="menu">
+        <button>
+          <img src="images/icon-menu.svg" class="menu-img" alt="" />
+        </button>
+      </div>
+      <div class="logo">
+        <a href=""><img src="images/logo.svg" alt="" /></a>
+      </div>
+      <div class="links_box">
+        <ul class="links">
+          <span class="close_links">&times;</span>
+          <!-- <li class="logo">
+          <a href=""><img src="images/logo.svg" alt="" /></a>
+        </li> -->
+          <li class="nav-links"><a href="">Collection</a></li>
+          <li class="nav-links"><a href="">Men</a></li>
+          <li class="nav-links"><a href="">Women</a></li>
+          <li class="nav-links"><a href="">About</a></li>
+          <li class="nav-links"><a href="">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="side-avatar cart_item">
+        <div class="">
+          <span class="number">0</span>
+          <img src="images/icon-cart.svg" alt="" class="cart-img" />
+          <div class="add-cart">
+            <h5 class="add-cart-text">Cart</h5>
+            <div class="cartText">
+              <p class="cart-text">Your cart is empty</p>
+            </div>
+          </div>
+        </div>
+        <img src="images/image-avatar.png" class="cart-avatar" alt="" />
+      </div>
+    </nav>
+    <!-- Zoom out image -->
+    <div class="modal-section">
+      <span class="close">&times;</span>
+      <div class="next-icon previous">
+        <img src="images/icon-previous.svg" alt="" />
+      </div>
+      <input type="image" class="zoom_img" src="" id="img_zoom" />
+      <div class="next-icon next">
+        <img src="images/icon-next.svg" alt="" />
+      </div>
+      <div class="small-img">
+        <img
+          src="images/image-product-1.jpg"
+          class="img-small first slider"
+          id="small-img"
+          onclick="galleryFunction2(this)"
+        />
+        <img
+          src="images/image-product-2.jpg"
+          id="small-img"
+          class="img-small slider"
+          onclick="galleryFunction2(this)"
+        />
+        <img
+          src="images/image-product-3.jpg"
+          id="small-img"
+          class="img-small slider"
+          onclick="galleryFunction2(this)"
+        />
+        <img
+          src="images/image-product-4.jpg"
+          id="small-img"
+          class="img-small slider"
+          onclick="galleryFunction2(this)"
+        />
+      </div>
+    </div>
+    <!--navigation sec ends-->
+    <div class="container">
+      <div class="img-section">
+        <div class="add-icon">
+          <img src="images/icon-previous.svg" onclick="plusSlides(-1)" alt="" />
+        </div>
+        <img
+          type="image"
+          class="mob-product-img"
+          src="images/image-product-1.jpg"
+        />
+        <input
+          type="image"
+          class="product-img"
+          src="images/image-product-1.jpg"
+        />
+        <div class="add-icon n-icon">
+          <img src="images/icon-next.svg" onclick="plusSlides(-1)" alt="" />
+        </div>
+        <!-- <img src="images/image-product-1.jpg" class="product-img" /> -->
+        <div class="small-img">
+          <img
+            src="images/image-product-1.jpg"
+            class="img-small first"
+            id="small-img"
+            onclick="galleryFunction(this)"
+          />
+          <img
+            src="images/image-product-2.jpg"
+            id="small-img"
+            class="img-small"
+            onclick="galleryFunction(this)"
+          />
+          <img
+            src="images/image-product-3.jpg"
+            id="small-img"
+            class="img-small"
+            onclick="galleryFunction(this)"
+          />
+          <img
+            src="images/image-product-4.jpg"
+            id="small-img"
+            class="img-small"
+            onclick="galleryFunction(this)"
+          />
+        </div>
+      </div>
+      <div class="info-section">
+        <h4 class="info-header">SNEAKER COMPANY</h4>
+        <h1 class="text">
+          Fall Limited Edition<br />
+          Sneakers
+        </h1>
+        <p class="paragraph">
+          These low-profile sneakears are your perfect casual waer companion.
+          Featuring a durable rubber outer sole, they'll withstand everything
+          the weather can offer
+        </p>
+        <div class="amount-text">
+          <h2>$125.00 <span class="span">50%</span></h2>
+          <h5 class="price-tag">$250.00</h5>
+        </div>
+
+        <div class="button">
+          <div class="btn-box">
+            <button type="submit" class="btn minus">
+              <img src="images/icon-minus.svg" class="icon-minus" alt="" />
+            </button>
+            <button type="submit" class="btn">
+              <span class="zero">0</span>
+            </button>
+            <button type="submit" class="btn plus">
+              <img src="images/icon-plus.svg" alt="" />
+            </button>
+          </div>
+
+          <button class="cart-btn">
+            <!-- <img src="images/icon-cart.svg" class="btn-img" alt="" /> -->
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z"
+                fill="#69707D"
+                fill-rule="nonzero"
+              />
+            </svg>
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
