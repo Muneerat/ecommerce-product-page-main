@@ -59,9 +59,6 @@ a {
 }
 .side-avatar {
   display: flex;
-  /* position: relative;
-  top: 0;
-  right: 0; */
 }
 .cart-avatar {
   height: 40px;
@@ -70,9 +67,6 @@ a {
   border: 2px solid var(--Orange);
   border-radius: 50%;
 }
-/* .cart_item {
-  position: relative;
-} */
 .number {
   position: absolute;
   top: 3%;
@@ -87,7 +81,7 @@ a {
   margin: auto;
   display: flex;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 4rem;
 }
 .add-cart {
   background-color: var(--White);
@@ -97,7 +91,6 @@ a {
   height: 30%;
   right: 60px;
   position: absolute;
-  /* display: none; */
   visibility: hidden;
 }
 .show-cart {
@@ -125,9 +118,9 @@ a {
 }
 .product-img {
   height: 70%;
-  width: 65%;
+  max-width: 70%;
   border-radius: 35px;
-  padding: 15px 10px;
+  padding: 18px 10px;
   /* display: block; */
 }
 .small-img {
@@ -149,7 +142,7 @@ a {
   opacity: 55%;
 }
 .img-small {
-  width: 90px;
+  width: 75px;
 }
 .info-header {
   color: var(--Orange);
@@ -230,11 +223,11 @@ path {
   width: 100%;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.8);
-  margin: auto;
+  margin: 0 auto;
   z-index: 999;
   top: 0;
   left: 0;
-  padding: 0 10rem 0 19rem;
+  padding: 2rem 15rem 0 19rem;
   justify-content: center;
 }
 .close {
@@ -243,6 +236,7 @@ path {
   color: var(--Orange);
   text-align: center;
   cursor: pointer;
+  padding: 0 0 0 8rem;
 }
 .next-icon {
   padding: 10px 15px;
@@ -253,11 +247,17 @@ path {
   position: absolute;
   top: 15rem;
 }
+.main-modal {
+  padding: 0 0 0 10rem;
+}
+.previous {
+  left: 26.5rem;
+}
 .zoom_img {
-  width: 52%;
+  width: 65%;
+  height: 50%;
   margin: auto;
   justify-content: center;
-  height: 70%;
   border-radius: 35px;
   padding: 15px 10px;
 }
@@ -275,6 +275,7 @@ path {
 .detail-text {
   padding: 0px 15px;
 }
+
 .amount {
   display: flex;
   padding: 8px 0;
@@ -337,7 +338,14 @@ path {
   }
   .menu {
     display: flex;
-    padding: 0.8rem 0rem 0;
+    padding: 0 0 0 1rem;
+  }
+  .hamburger {
+    border: none;
+    background-color: white;
+  }
+  .menu-img {
+    width: 18px;
   }
   .nav {
     border-bottom: none;
@@ -419,7 +427,7 @@ path {
     visibility: visible;
   } */
   .number {
-    top: 2%;
+    top: 3%;
     right: 22%;
   }
   .add-cart {
@@ -427,7 +435,7 @@ path {
     box-shadow: 0px 1px 5px 0px rgb(42, 40, 40);
     border-radius: 10px;
     width: 96%;
-    height: 32%;
+    height: 45%;
     right: 0px;
     position: absolute;
     z-index: 999;

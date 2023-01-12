@@ -39,7 +39,34 @@ function galleryFunction(small) {
 //when the user click on the big image it set to open in a model
 const closeTag = document.querySelector(".close");
 const modalsection = document.querySelector(".modal-section");
-const img_zoom = document.getElementById("img_zoom");
+const img_zoom = document.querySelector("#img_zoom");
+const mob_slide = document.querySelector("#mob-slide");
+//Slide 2ru the image
+const pictures = [
+  "images/image-product-1.jpg",
+  "images/image-product-2.jpg",
+  "images/image-product-3.jpg",
+  "images/image-product-4.jpg",
+];
+
+let currentPicture = 0;
+const nextPicture = () => {
+  if (currentPicture < pictures.length - 1) {
+    currentPicture += 1;
+    let newPicture = pictures[currentPicture];
+    img_zoom.src = newPicture;
+    mob_slide.src = newPicture;
+  }
+};
+
+const prevPicture = () => {
+  if (currentPicture != 0) {
+    currentPicture -= 1;
+    let newPicture = pictures[currentPicture];
+    img_zoom.src = newPicture;
+    mob_slide.src = newPicture;
+  }
+};
 bigImage.addEventListener("click", function (e) {
   var src = e.target.src;
   modalsection.style.display = "block";

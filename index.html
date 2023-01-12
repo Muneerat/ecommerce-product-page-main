@@ -54,7 +54,7 @@
     <!--navigation sec-->
     <nav class="nav">
       <div class="menu">
-        <button>
+        <button class="hamburger">
           <img src="images/icon-menu.svg" class="menu-img" alt="" />
         </button>
       </div>
@@ -91,61 +91,66 @@
     </nav>
     <!-- Zoom out image -->
     <div class="modal-section">
-      <span class="close">&times;</span>
-      <div class="next-icon previous">
-        <img src="images/icon-previous.svg" alt="" />
-      </div>
-      <input type="image" class="zoom_img" src="" id="img_zoom" />
-      <div class="next-icon next">
-        <img src="images/icon-next.svg" alt="" />
-      </div>
-      <div class="small-img">
-        <img
-          src="images/image-product-1.jpg"
-          class="img-small first slider"
-          id="small-img"
-          onclick="galleryFunction2(this)"
-        />
-        <img
-          src="images/image-product-2.jpg"
-          id="small-img"
-          class="img-small slider"
-          onclick="galleryFunction2(this)"
-        />
-        <img
-          src="images/image-product-3.jpg"
-          id="small-img"
-          class="img-small slider"
-          onclick="galleryFunction2(this)"
-        />
-        <img
-          src="images/image-product-4.jpg"
-          id="small-img"
-          class="img-small slider"
-          onclick="galleryFunction2(this)"
-        />
+      <div class="main-modal">
+        <span class="close">&times;</span>
+        <div class="next-icon previous">
+          <img src="images/icon-previous.svg" alt="" onclick="prevPicture()" />
+        </div>
+        <input type="image" class="zoom_img" src="" id="img_zoom" />
+        <div class="next-icon next">
+          <img src="images/icon-next.svg" alt="" onclick="nextPicture()" />
+        </div>
+        <div class="small-img">
+          <img
+            src="images/image-product-1.jpg"
+            class="img-small first slider"
+            id="small-img"
+            onclick="galleryFunction2(this)"
+          />
+          <img
+            src="images/image-product-2.jpg"
+            id="small-img"
+            class="img-small slider"
+            onclick="galleryFunction2(this)"
+          />
+          <img
+            src="images/image-product-3.jpg"
+            id="small-img"
+            class="img-small slider"
+            onclick="galleryFunction2(this)"
+          />
+          <img
+            src="images/image-product-4.jpg"
+            id="small-img"
+            class="img-small slider"
+            onclick="galleryFunction2(this)"
+          />
+        </div>
       </div>
     </div>
     <!--navigation sec ends-->
     <div class="container">
       <div class="img-section">
         <div class="add-icon">
-          <img src="images/icon-previous.svg" onclick="plusSlides(-1)" alt="" />
+          <img src="images/icon-previous.svg" onclick="prevPicture()" alt="" />
         </div>
         <img
           type="image"
           class="mob-product-img"
+          id="mob-slide"
           src="images/image-product-1.jpg"
         />
         <input
           type="image"
           class="product-img"
+          id="img_zoom"
           src="images/image-product-1.jpg"
         />
         <div class="add-icon n-icon">
-          <img src="images/icon-next.svg" onclick="plusSlides(-1)" alt="" />
+          <!-- <button onclick="nextPicture()">Next</button> -->
+          <img src="images/icon-next.svg" onclick="nextPicture()" alt="" />
         </div>
-        <!-- <img src="images/image-product-1.jpg" class="product-img" /> -->
+
         <div class="small-img">
           <img
             src="images/image-product-1.jpg"

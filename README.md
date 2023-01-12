@@ -69,17 +69,9 @@ bigImage.addEventListener("click", function (e) {
 });
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Having challenges working with next and previous botton i will like to work another that have those button to improve on it.
-
 ## Author
 
-- Website - [Add your name here](Oladipo Munirat Mopelola)
+- Website - [Oladipo Munirat Mopelola]
 - Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@yourusername](https://www.twitter.com/yourusername)
 
